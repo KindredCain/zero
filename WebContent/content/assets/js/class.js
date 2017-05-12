@@ -39,34 +39,34 @@ function getUrlData(){
     if((openid == null) || (openid == "")) goStatePage(2,2);
     else if((classid == null) || (classid == "")) goStatePage(3,2);
     else{
-        $.ajax({
-            url: "./content/assets/json/test_class.json",
-                type: "get",
-                data: {
-                	"claId": classid
-                	},
-                dataType: "JSON",
-                success: function(data) {
-                                loadClassPage(data);
-                            },
-                error: function() {
-                    goStatePage(3,1);
-                }
-        });
-        // $.ajax({
-        //     url: "findclazz.do",
-        //         type: "post",
-        //         data: {
-        //         	"claId": classid
-        //         	},
-        //         dataType: "JSON",
-        //         success: function(data) {
-        //                         loadClassPage(data);
-        //                     },
-        //         error: function() {
-        //             goStatePage(3,1);
-        //         }
-        // });
+//        $.ajax({
+//            url: "./content/assets/json/test_class.json",
+//                type: "get",
+//                data: {
+//                	"claId": classid
+//                	},
+//                dataType: "JSON",
+//                success: function(data) {
+//                                loadClassPage(data);
+//                            },
+//                error: function() {
+//                    goStatePage(3,1);
+//                }
+//        });
+         $.ajax({
+             url: "findclazz.do",
+                 type: "post",
+                 data: {
+                 	"claId": classid
+                 	},
+                 dataType: "JSON",
+                 success: function(data) {
+                                 loadClassPage(data);
+                             },
+                 error: function() {
+                     goStatePage(3,1);
+                 }
+         });
     }
 }
 // 加载ClassPage
