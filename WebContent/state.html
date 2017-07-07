@@ -7,15 +7,21 @@
     <link rel="stylesheet" href="./content/assets/css/weui.min.css">
     <link rel="stylesheet" href="./content/assets/css/default.css">
 </head>
-<body touchstart>
 
+<body touchstart></body>
+
+<script type="text/javascript" src="./content/assets/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./content/assets/js/layout.js"></script>
+<script type="text/javascript" src="./content/assets/js/state.js"></script>
+
+<script type="text/html" id="successPage">
     <div class="page" id="success">
         <div class="page__hd"></div>
         <div class="page__bd">
             <center>
                     <i class="weui-icon-success weui-icon_msg page__icon"></i>
                     <h1 class="page__title">成功</h1>
-                    <p class="page__desc">用于表示操作顺利达成</p>
+                    <p class="page__desc">[info]</p>
             </center>
         </div>  
         <div class="page__ft">
@@ -28,13 +34,90 @@
     <div class="weui-footer weui-footer_fixed-bottom">
         <p class="weui-footer__text">Copyright © 2008-2016 weui.io</p>
     </div>
+</script>
+<script type="text/html" id="infoPage">
+    <div class="page" id="info">
+        <div class="page__hd"></div>
+        <div class="page__bd">
+            <center>
+                    <i class="weui-icon-info weui-icon_msg page__icon"></i>
+                    <h1 class="page__title">提示</h1>
+                    <p class="page__desc">[info]</p>
+            </center>
+        </div>  
+        <div class="page__ft">
+            <div class="weui-btn-area">
+                <a class="weui-btn weui-btn_primary" href="javascript:" id="showTooltips"  type="button">确定</a>
+            </div>
+        </div>
+    </div>
 
-</body>
+    <div class="weui-footer weui-footer_fixed-bottom">
+        <p class="weui-footer__text">Copyright © 2008-2016 weui.io</p>
+    </div>
+</script>
+<script type="text/html" id="warnPage">
+    <div class="page" id="warn">
+        <div class="page__hd"></div>
+        <div class="page__bd">
+            <center>
+                    <i class="weui-icon-warn weui-icon_msg-primary page__icon"></i>
+                    <h1 class="page__title">警告</h1>
+                    <p class="page__desc">[info]</p>
+            </center>
+        </div>  
+        <div class="page__ft">
+            <div class="weui-btn-area">
+                <a class="weui-btn weui-btn_primary" href="javascript:" id="showTooltips"  type="button">确定</a>
+            </div>
+        </div>
+    </div>
 
-<script type="text/html" id="success"></script>
-<script type="text/html" id="info"></script>
-<script type="text/html" id="warn"></script>
-<script type="text/html" id="error"></script>
-<script type="text/html" id="waiting"></script>
+    <div class="weui-footer weui-footer_fixed-bottom">
+        <p class="weui-footer__text">Copyright © 2008-2016 weui.io</p>
+    </div>
+</script>
+<script type="text/html" id="errorPage">
+    <div class="page" id="error">
+        <div class="page__hd"></div>
+        <div class="page__bd">
+            <center>
+                    <i class="weui-icon-warn weui-icon_msg page__icon"></i>
+                    <h1 class="page__title">错误</h1>
+                    <p class="page__desc">[info]</p>
+            </center>
+        </div>  
+        <div class="page__ft">
+            <div class="weui-btn-area">
+                <a class="weui-btn weui-btn_primary" href="javascript:" id="showTooltips"  type="button">确定</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="weui-footer weui-footer_fixed-bottom">
+        <p class="weui-footer__text">Copyright © 2008-2016 weui.io</p>
+    </div>
+</script>
+<script type="text/html" id="waitingPage">
+    <div class="page" id="waiting">
+        <div class="page__hd"></div>
+        <div class="page__bd">
+            <center>
+                    <i class="weui-icon-waiting weui-icon_msg page__icon"></i>
+                    <h1 class="page__title">等待</h1>
+                    <p class="page__desc">[info]</p>
+            </center>
+        </div>  
+        <div class="page__ft">
+            <div class="weui-btn-area">
+                <a class="weui-btn weui-btn_primary" href="javascript:" id="showTooltips"  type="button">确定</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="weui-footer weui-footer_fixed-bottom">
+        <p class="weui-footer__text">Copyright © 2008-2016 weui.io</p>
+    </div>
+</script>
 
 </html>

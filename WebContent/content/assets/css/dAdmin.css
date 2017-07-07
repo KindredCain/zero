@@ -1,0 +1,89 @@
+body {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	overflow: hidden;
+}
+.content {
+    width: 100%;
+    overflow: hidden;
+}
+.shadow-box {
+    position: absolute;
+    background-color:rgba(0,0,0,0.7);
+    margin: 0;
+    padding: 50px 50px 0 50px;
+    z-index: 999;
+}
+.page-add{
+    overflow-y: auto;
+    width: 60%;
+    background-color:#fff;
+    margin-left:auto;
+    margin-right: auto;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.content-left {
+    position: relative;
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+	border-right: 2px solid #D9D9D9;
+}
+.content-center{
+    position: relative;
+    float: left;
+    width: 75%;
+    box-sizing: border-box;
+	border-right: 2px solid #D9D9D9;
+    border-left: 2px solid #D9D9D9;
+}
+.content-right {
+    position: relative;
+    float: left;
+    width: 0%;
+    box-sizing: border-box;
+    border-left: 2px solid #D9D9D9;
+}
+#adminMenu .page__bd .weui-btn-area{
+    margin: 30px 50px;
+}
+.page-content{
+    width: 100%;
+}
+.page-content table{
+    margin-top:20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.page-content table th{
+  background-color:	#B0C4DE;
+}
+.page-content table td{
+  text-align: center;
+}
+.add-index{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    -webkit-appearance: none;
+    background-color: transparent;
+    font-size: inherit;
+    color: inherit;
+    height: 1.47058824em;
+    line-height: 1.47058824;
+}
+.add__bd{
+    width: 60%;
+    margin-top:20px; 
+    margin-bottom:20px; 
+    margin-right: 20px;
+    background-color: #fff;
+    padding: 8px;
+}
+.select-bd{
+    width: 40%;
+    padding: 5px;
+}

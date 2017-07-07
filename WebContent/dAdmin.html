@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title></title>
+    <link rel="stylesheet" href="./content/assets/css/weui.min.css">
+    <link rel="stylesheet" href="./content/assets/css/default.css">
+    <link rel="stylesheet" href="./content/assets/css/dAdmin.css">
+</head>
+<body touchstart>
+    <!--Loading状态-->
+    <!--<div class="page" id="loading">
+        <div class="page__hd">
+            <center><h1 class="page__title">Loading...</h1></center>
+        </div>
+    </div>-->
+
+    <div class="content" >
+        <div class="shadow-box" id="on" style="display:none">
+            <div class="page-add" id="adminAdd">
+                <div class="add__hd">
+                    <h1 class="page__title">添加课程</h1>
+                </div>
+                <div class="add__bd" style="margin-top:40px; border:1px solid">
+                    <input class="add-index" type="text" placeholder="请输入课程名称">
+                </div>
+                <div class="add-select" >
+                    <label class="add__bd" >请选择授课教师</label>
+                    <select class="select-bd" name="select1" style="margin-bottom:40px;margin-top:20px">
+                        <option selected="" value="1">贝多芬</option>
+                        <option value="2">牛顿</option>
+                    </select>
+                    <div class="weui-btn-area" id="bt6">
+                        <a href="javascript:;" class="weui-btn weui-btn_primary" style="margin:50px 150px;">确定</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shadow-box" id="on2" style="display:none">
+            <div class="page-add" id="adminAdd">
+                <div class="add__hd">
+                    <h1 class="page__title">添加教师</h1>
+                </div>
+                <div class="add__bd" style="margin-top:40px; border:1px solid">
+                    <input class="add-index" type="text" placeholder="请输入教师工号">
+                </div>
+                <div class="add-select" >
+                    <div class="add__bd" style="margin-top:40px; border:1px solid">
+                        <input class="add-index" type="text" placeholder="请输入教师姓名">
+                    </div>
+                    <div class="weui-btn-area" id="bt5">
+                        <a href="javascript:;" class="weui-btn weui-btn_primary" style="margin:50px 150px;">确定</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-left">
+            <div class="page" id="adminMenu">
+                <div class="page__icon">
+                    <center><img src="./image/logo.png" style="width:90%;margin:40px 0px;box-sizing:border-box;"></center>
+                </div>
+                <div class="page__bd">
+                    <div class="weui-btn-area" id="bt1"> 
+                        <a href="javascript:;" class="weui-btn weui-btn_primary">查看课程</a>
+                    </div>
+                    <div class="weui-btn-area" id="bt3">
+                        <a href="javascript:;" class="weui-btn weui-btn_primary">查看教师</a>
+                    </div>
+                    <div class="weui-btn-area" id="bt2">
+                        <a href="javascript:;" class="weui-btn weui-btn_primary">添加课程</a>
+                    </div>
+                    <div class="weui-btn-area" id="bt4">
+                        <a href="javascript:;" class="weui-btn weui-btn_primary">添加教师</a>
+                    </div>
+                </div>
+                <div class="page__ft">
+                    <center><p class="weui-cells__title" style="font-size:16px">您好，樱花大学管理员</p></center>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content-center">
+
+            <div class="page-content" id="adminContent" >
+                <table width="80%" border="1" cellspacing="0px">
+                    <tr>
+                        <th scope="col">课程编号</th>
+                        <th scope="col">课程名称</th>
+                        <th scope="col">授课教师名</th>
+                        <th scope="col">课程简介</th>
+                    </tr>
+                    <tr>
+                        <td>C221221</td>
+                        <td>大学物理</td>
+                        <td>牛顿</td>
+                        <td>牛顿教你学大物</td>
+                    </tr>
+                    <tr>
+                        <td>E300823</td>
+                        <td>大学英语四</td>
+                        <td>牛顿</td>
+                        <td>牛顿也会说英语</td>
+                    </tr>
+                    <tr>
+                        <td>M102464</td>
+                        <td>音乐鉴赏</td>
+                        <td>贝多芬</td>
+                        <td>贝多芬的音乐鉴赏</td>
+                    </tr>
+                </table>
+            </div>
+
+            
+            
+            <div class="page-content" id="adminTeacher" style="display:none">
+                <table width="80%" border="1">
+                    <tr>
+                        <th scope="col">工号</th>
+                        <th scope="col">账号</th>
+                        <th scope="col">密码</th>
+                        <th scope="col">姓名</th>
+                    </tr>
+                    <tr>
+                        <td>800</td>
+                        <td>yhu800</td>
+                        <td>********</td>
+                        <td>牛顿</td>
+                    </tr>
+                    <tr>
+                        <td>801</td>
+                        <td>yhu801</td>
+                        <td>********</td>
+                        <td>贝多芬</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="page-add" id="adminAddteacher" style="display:none">
+                <div class="add__hd">
+                    <h1 class="page__title">添加教师</h1>
+                </div>
+                <div class="add__bd">
+                    <input class="add-index" type="text" placeholder="请输入教师姓名">
+                </div>
+                <div class="add__bd">
+                    <input class="add-index" type="text" placeholder="请输入教师工号">
+                </div>
+                <div class="weui-btn-area">
+                        <a href="javascript:;" class="weui-btn weui-btn_primary">确定</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script type="text/javascript" src="./content/assets/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./content/assets/js/dAdmin.js"></script>
+
+</html>

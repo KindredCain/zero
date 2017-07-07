@@ -7,36 +7,52 @@
     <link rel="stylesheet" href="./content/assets/css/weui.min.css">
     <link rel="stylesheet" href="./content/assets/css/default.css">
 </head>
+
 <body touchstart>
-    <script type="text/javascript" src="./content/assets/js/jquery-3.2.1.min.js"></script>
-        <script type="text/javascript" src="./content/assets/js/layout.js"></script>
-    <script type="text/javascript" src="./content/assets/js/teacherList.js"></script>  
-    <div class="page" id="MyTeachet">
+    
+    <!--Loading状态-->
+    <div class="page" id="loading">
+        <div class="page__hd">
+            <center><h1 class="page__title">Loading...</h1></center>
+        </div>
+    </div>
+
+    <div class="weui-footer weui-footer_fixed-bottom">
+        <p class="weui-footer__text">Copyright © 2008-2016 weui.io</p>
+    </div>
+
+</body>
+
+<script type="text/javascript" src="./content/assets/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./content/assets/js/layout.js"></script>
+<script type="text/javascript" src="./content/assets/js/teacherList.js"></script>
+
+<!--教师列表页面-->
+<script type="text/html" id="teacherListPage">
+    <div class="page" id="teacherList">
         <div class="page__hd">
             <h1 class="page__title">我的老师</h1>
         </div>
         <div class="page__bd">
             <div class="weui-cells__title">教师列表</div>
-            <div class="weui-cells">
-                <a class="weui-cell weui-cell_access" href="javascript:;" onclick="Teacher(this)">
-                    <div class="weui-cell__bd">
-                        <p>杨枨</p>
-                    </div>
-                    <div class="weui-cell__ft">
-                    </div>
-                </a>
-                <a class="weui-cell weui-cell_access" href="javascript:;" onclick="Teacher(this)">
-                    <div class="weui-cell__bd">
-                        <p>候宏伦</p>
-                    </div>
-                    <div class="weui-cell__ft">
-                    </div>
-                </a>
+            <div class="noBox" id="noTeacher">
+                <center>
+                    <i class="weui-icon-info"></i>
+                    <span class = "page__title">暂无教师</span>
+                </center>
             </div>
+            <div class="weui-cells"></div>
         </div>
-        <div class="weui-footer weui-footer_fixed-bottom">
-            <p class="weui-footer__text">Copyright © 2008-2016 weui.io</p>
-        </div>
+        <div class="page__ft"></div>
     </div>
-</body>
+</script>
+<!--教师Cell-->
+<script type="text/html" id="teacherListCell">
+    <a class="weui-cell weui-cell_access" href="javascript:;" onclick="goTeacherPage(this)">
+        <input class="input-data__hide" value=[teacherOpenid] />
+        <div class="weui-cell__bd"><p>[teacherName]</p></div>
+        <div class="weui-cell__ft"></div>
+    </a>
+</script>
+
 </html>
